@@ -180,7 +180,7 @@ img{
 		position: fixed;
 		bottom: -100%;
 		left: 0;
-		width: 0;
+		width: 100%;
 		background-color: var(--body-color);
 		padding: 2rem 1.5rem 4rem;
 		box-shadow: 0 -1px 4px rgba(0,0,0,.15rem);
@@ -381,6 +381,121 @@ img{
 }
 
 /*===================== SKILLS =====================*/
+.skills__container{
+	row-gap: 0;
+}
+
+.skills__header{
+	display: flex;
+	align-items: center;
+	margin-bottom: var(--mb-2-5);
+	cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+	font-size: 2rem;
+	color: var(--first-color);
+}
+
+.skills__icon{
+	margin-right: var(--mb-0-75);
+}
+
+.skills__title{
+	font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+	font-size: var(--small-font-size);
+	color: var(--text-color-light);
+}
+
+.skills__arrow{
+	margin-left: auto;
+	transition: .4s;
+}
+
+.skills__titles{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+	height: 5px;
+	border-radius: .25rem;
+}
+
+.skills__bar{
+	background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+	display: block;
+	background-color: var(--first-color);
+}
+
+.skills__socialmd{
+	width: 90%;
+}
+
+.skills__uxui{
+	width: 80%;
+}
+
+.skills__visualdsg{
+	width: 90%;
+}
+
+.skills__prototyping{
+	width: 70%;
+}
+
+.skills__sketch{
+	width: 90%;
+}
+
+.skills__illust{
+	width: 90%;
+}
+
+.skills__pat{
+	width: 70%;
+}
+
+.skills__portraits{
+	width: 80%;
+
+}
+
+.skills__t1{
+	width: 80%;
+}
+
+.skills__t2{
+	width: 80%;
+}
+
+.skills__t3{
+	width: 80%;
+}
+
+.skills__t4{
+	width: 80%;
+}
+
+.skills__close .skills__list{
+	height: 0;
+	overflow: hidden;
+}
+
 
 
 /*===================== QUALIFICATION =====================*/
