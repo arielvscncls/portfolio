@@ -5,9 +5,14 @@ const navMenu = document.getElementById('nav-menu'),
 
 /*======== MENU SHOW ========*/
 /* Validate if constant exists */
+
+console.log(navMenu)
+console.log(navClose)
+console.log(navToogle)
+
 if(navToogle){
     navToogle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
+        navMenu.classList.add(' show-menu')
     })
 }
 
@@ -15,7 +20,7 @@ if(navToogle){
 /* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click',() =>{
-        navMenu.classList.remove('show-menu')
+        navMenu.classList.remove(' show-menu')
     })
 }
 
@@ -27,13 +32,14 @@ function linkAction(){
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
+
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*======================== ACCORDION SKILLS ================*/
 
 const skillsContent = document.getElementsByClassName('skills__content'),
       skillsHeader = document.querySelectorAll('.skills__header')
-      
+
 function toggleSkills(){
     let itemClass = this.parentNode.className
 
